@@ -1,0 +1,433 @@
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'playfair.bold';
+    src: url('playfair.bold.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    width: 1300px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 70px;
+    font-weight: 400;
+    float: left;
+    font-family: 'playfair.bold', sans-serif;
+    color: #cdb99b;
+    text-shadow: -4px 4px 0 black;
+    letter-spacing: 1px;
+}
+
+.leila-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.leila-link:hover {
+    text-decoration: underline;
+}
+
+.deskripsi {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: bold;
+    margin-right: 20px;
+}
+
+.menu {
+    float: right; 
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2C221B;
+    z-index: 1;
+    border-bottom: 1px solid #000000;
+    transition: top 0.1s ease;
+}
+
+nav.hide {
+    top: -99px;
+}
+
+nav:hover {
+    top: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #cdb99b;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    scroll-margin-top: 100px;
+}
+
+.kolom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    color: #cdb99b;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-family: 'playfair.bold', sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #cdb99b;
+    text-shadow: -4px 4px 0 black;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #2C221B;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #A77F60;
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background: #2C221B;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #A77F60;
+    text-decoration: none;
+}
+
+p {
+    margin: 8px 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+p1 {
+    margin: 8px 0;
+    padding: 0;
+    line-height: 1.7;
+    margin-left: 60px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    font-family: 'playfair.bold', serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #cdb99b;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'playfair.bold', serif;
+    letter-spacing: 1px;
+    text-shadow: -2px 2px 0 black;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: #cdb99b;
+}
+
+.partner-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.kartu-partner {
+    width: 180px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.kartu-partner img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.kartu-partner p {
+    font-family: 'playfair.bold', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #cdb99b;
+    letter-spacing: 2px;
+    text-shadow: -2px 2px 0 black;
+}
+
+#contact {
+    background: #2C221B;
+    width: 100%;
+    padding: 5px 0;
+}
+
+#contact .wrapper {
+    width: 100%;
+    max-width: none;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #cdb99b;
+    width: 95%;
+    line-height: 50px;
+}
+
+h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    color: #cdb99b;
+    width: 95%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+.kartu-partner p:hover {
+    background: #A77F60;
+    text-decoration: none;
+}
+
+.kartu-tutor p:hover {
+    background: #A77F60;
+    text-decoration: none;
+}
+
+
+.ig-link {
+    color: #cdb99b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ig-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991.98px) {
+
+    body {
+        padding-top: 250px;
+    }
+    
+    .wrapper {
+        width: 95%;
+    }
+
+    .tbl-pink, .tbl-biru {
+    background: #2C221B;
+    color: #ffffff;
+}
+
+.tbl-pink:hover, .tbl-biru:hover {
+    background: #2C221B;
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 42px;
+    text-shadow: -2.5px -2.5px 0 black;
+}
+
+
+    /* section jangan dipaksa horizontal */
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* title lebih kecil */
+    h2 {
+        font-size: 65px;
+        line-height: 1;
+    }
+
+    .kolom .deskripsi {
+        font-size: 16px;
+    }
+
+    /* Houses & Characters */
+    .partner-list,
+    .tutor-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+   .kartu-tutor {
+        width: 40%;
+    }
+
+    .kartu-partner {
+        width: 120px;
+        text-align: center;
+     } 
+
+    .kartu-partner img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .kartu-partner p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top: 10px;
+    word-break: break-word;
+    
+    }
+
+    .kartu-tutor img {
+        width: 100%;
+    }
+
+    /* Footer */
+    #contact {
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer-section {
+        min-width: 180px;
+        flex: 1 1 200px;
+    }
+
+    .footer-section h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+}
